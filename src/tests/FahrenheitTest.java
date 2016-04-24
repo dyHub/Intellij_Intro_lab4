@@ -1,5 +1,7 @@
-package edu.ucsd.cs110.temperature;
+package tests;
 
+import edu.ucsd.cs110.temperature.Fahrenheit;
+import edu.ucsd.cs110.temperature.Temperature;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

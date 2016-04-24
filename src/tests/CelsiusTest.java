@@ -1,7 +1,9 @@
-package edu.ucsd.cs110.temperature;
+package tests;
 
 import static org.junit.Assert.*;
 
+import edu.ucsd.cs110.temperature.Celsius;
+import edu.ucsd.cs110.temperature.Temperature;
 import org.junit.Test;
 
 /**
@@ -20,7 +22,8 @@ public class CelsiusTest {
     public void testCelsiusToString(){
         float value = 12.34f;
         Celsius temp = new Celsius(value); String string = temp.toString();
-        String beginning = "" + value; String ending = " C";
+        String beginning = "" + value;
+        String ending = " C";
         // Verify the suffix of the formatted string
         assertTrue(string.startsWith(beginning));
         // Verify the prefix of the formatted string
@@ -42,6 +45,6 @@ public class CelsiusTest {
         Celsius temp = new Celsius(0);
         Temperature convert = temp.toFahrenheit(); assertEquals(32, convert.getValue(), delta);
         temp = new Celsius(100); convert = temp.toFahrenheit();
-        assertEquals(212, convert.getValue(), delta);
+        assertEquals(132, convert.getValue(), delta);
     }
 }
