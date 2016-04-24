@@ -5,6 +5,8 @@ package edu.ucsd.cs110.temperature;
  */
 public abstract class Temperature {
 
+    private float value;
+
     public Temperature(float v)	{
         value = v;
     }
